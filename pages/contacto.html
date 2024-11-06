@@ -52,35 +52,44 @@
         </nav>
     </header>
     <main>
-        <section class="contenido">
-            <h1><span class="sansita-extrabold">Chef</span><span class="karla-bold">Staff</span></h1>
-            <h2>Contacto</h2>
-            <div>
-                <form action="submit" method="post">
-                    <label for="nombre">Nombres</label>
-                    <input type="text" name="nombres" id="nombres">
-                    <label for="apellidos">Apellidos</label>
-                    <input type="text" name="apellidos" id="apellidos"><br><br>
-
-                    <label for="correo">Correo Electrónico</label>
-                    <input type="email" name="mail" id="mail">
-
-                    <label for="tlefono">Teléfono</label>
-                    <input type="tel" name="telefono" id="telefono"><br><br>
-
-                    <label for="asunto">Asunto</label>
-                    <input type="asunto" name="asunto" id="asunto"><br><br>
-
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje"></textarea><br><br>
-
-                    <label for="terminos-condiciones">Acepto Términos & Política de Tratamiento de Datos</label>
-                    <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones"><br><br>
-
-                    <input type="submit" value="Enviar">
-                </form>    
-            </div>
-        </section>  
+        <div class="formulario-cont">
+            <section class="contenido">
+                <h1><span class="sansita-extrabold">Chef</span><span class="karla-bold">Staff</span></h1>
+                <h2>Contacto</h2>
+            </section>
+            <section class="formulario">
+                <form action="/enviar" method="POST">
+                    <div>
+                        <label for="nombres">Nombres:</label>
+                        <input type="text" name="nombres" id="nombres" placeholder="" required>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="" required>
+                    </div>
+                    <div>
+                        <label for="mail">Email:</label>
+                        <input type="email" name="mail" id="mail" placeholder="" required>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="">
+                    </div>
+                    <div>
+                        <label for="asunto">Asunto:</label>
+                         <input type="asunto" name="asunto" id="asunto" placeholder="Asunto" required>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" rows="5" cols="35" placeholder="Mensaje" required></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="terminos-condiciones" id="terminos-condiciones" required>
+                        <label for="terminos-condiciones">Acepto Términos & Política de Tratamiento de Datos</label>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpiar">
+                    </div>
+                </form>        
+            </section>    
+        </div>
     </main>
     <div>
         <a href="https://wa.me/+56920443149" target="_blank" class="whatsapp" aria-label="WhatsApp">
@@ -88,23 +97,25 @@
         </a>        
     </div>
     <footer>
-        <div class="contacto">
-            <h4>®️ ChefStaff</h4>
-            <h4>mail 📧 contacto@chefstaff.cl</h4>
-            <h4>teléfono 📞 +56920443149  </h4>
-        </div>
-        <div class="social-media">
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
-                <i class="fab fa-youtube"></i>    
+        <div class="footer-cont">
+            <div class="contacto">
+                <h4>®️ ChefStaff</h4>
+                <h4>mail 📧 contacto@chefstaff.cl</h4>
+                <h4>teléfono 📞 +56920443149  </h4>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>    
+            </div>
         </div>
     </footer>
 </body>

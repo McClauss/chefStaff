@@ -1,29 +1,139 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/**************************/
-/*contenedores*/
 
-.contenedor{
-    padding: .5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;/*espacio entre cajas*/
-    flex-wrap: nowrap;
+/**************************/
+/*Grid*/
+/**************************/
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
+    gap: 5px;
+    grid-template-areas:
+        "header header"
+        "section section"
+        "main aside"
+        "footer footer"
+    ;
 }
 
-.servicios-cont{
-    padding: .5rem;
+h2 {
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    padding: 5px;
     display: flex;
-    gap: 10px;
-    flex-wrap: nowrap;
-    justify-content: center;/*para centrar elementos*/
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.card{
+.section {
+    grid-area: section;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.main {
+    grid-area: main;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.aside {
+    grid-area: aside;
+    padding: 20px;
+    margin:10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: "Karla", sans-serif;
+}
+.aside h3{
+    font-family: "Karla", sans-serif !important;
+}
+
+.footer {
+    grid-area: footer;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+/**************************/
+/*Contenedores*/
+/**************************/
+.cabeza {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+.portada {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.contenido {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid #040a4485;
+    border-radius: 10px;
+}
+.contenido-secundario {
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /*espacio entre cajas*/
+    flex-wrap: nowrap;
+}
+
+.pauta {
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios-cont {
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*para centrar elementos*/
+    align-items: center;
+}
+
+.cards {
     border: solid #ddd 1px;
     border-radius: 8px;
     padding: 20px;
@@ -33,57 +143,30 @@
     text-align: center;
 }
 
-.personal-cont{
+.personal-cont {
     padding: .5rem;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    justify-content: center;/*para centrar elementos*/
+    justify-content: center;
+    /*para centrar elementos*/
     align-items: center;
 }
-
-.formulario-cont{
-    padding: .5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;/*para centrar elementos*/
-    align-items: center; 
-}
-
-.footer-cont{
-    padding: .5rem;
+.contacto {
+    padding: 10px;
     display: flex;
     flex-direction: row;
-    gap:5px;/*espacio entre cajas*/
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items:start;
 }
+
 /**************************/
-/*header paginas*/
-.logo{
-    flex: 0 1 auto;  /* Mantiene el tamaño de la imagen sin estirarla */
-}
-
-.cabecera{
-    flex: 1;  /* Toma el espacio restante a la derecha del logo */
-    
-}
-
-.portada{
-    margin: 0 auto;
-    text-align: center;
-}
+/*Header con menu opciones*/
 /**************************/
-/*header con menu opciones*/
-.header-titulo{
-    text-align: center;
-}
-
-.header-nav{
-    width: 90%;
+.header__nav {
+    width: 100%;
     height: 90px;
-    /*background-color: #040A44;*/
     background-color: #040a4485;
     margin: 0 auto;
     border-radius: 20px;
@@ -92,136 +175,133 @@
     font-size: 1.3rem;
 }
 
-.header-contenedor{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.header-logo img{
+.header__logo img {
     width: 150px;
     padding: 5px;
-    margin: 5px;
 }
 
-.header-menu{
+.header__menu {
     list-style-type: none;
     padding: 10px;
     display: flex;
     align-items: center;
 }
 
-.header-link{
+.header__link {
     color: white;
     text-decoration: none;
     padding: 0.7rem;
 }
-.header-link:hover{
+
+.header__link:hover {
     color: #f70669;
     background-color: #040A44;
     border-radius: 20px;
 }
 
+.header__link:active {
+    color: #040A44;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
 /**************************/
-/*formulario postulaciones*/
-form{
+/*Formularios*/
+/**************************/
+.formulario-cont {
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    /*para centrar elementos*/
+    align-items: center;
+}
+
+form {
     border: 1px solid #040A44;
     border-radius: 15px;
     width: 98%;
+    height: 70vh;
 }
-form div{
+
+form div {
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
 }
 
-form input, label{
+form input,
+label {
     padding: 5px;
 }
 
-/**************************/
-/*otras secciones*/
-.contenido
-{
-    margin: 0 auto;
-    overflow: auto;
-    text-align: center;
-}
-
-.contenido h2, p, form{
-    text-align: center;
-}
-.complemento{
-    margin: 10px auto;
-}
-
-.complemento p{
-    text-align: center;
-    overflow: auto;
-}
-
-.contacto{
-    margin: 0 auto;
-    padding: 2px;
+form label {
+    font-family: "Karla", sans-serif;
+    font-size: 1.2rem;
 }
 
 /**************************/
-/*imagenes*/
-.imgLogo{
-    width: 350px;
-}
-
-.imgPortada{
-    width: 70%;
+/*Imagenes*/
+/**************************/
+img {
     padding: 10px;
 }
 
-.imgTextServicio{
+.imgLogo {
+    width: 350px;
+}
+
+.imgPortada {
+    width: 70%;
+}
+
+.imgTextServicio {
     width: 200px;
     height: 200px;
     border-radius: 10%;
     opacity: 0.7;
 }
-.imgTextServicio:hover{
+
+.imgTextServicio:hover {
     opacity: 1;
 }
 
-.textServicio{
+.textServicio {
     position: relative;
-    color:#f70669;
+    color: #f70669;
     background-color: #040a44c5;
+    font-family: "Karla", sans-serif !important;
 }
 
 /**************************/
-/*textos*/
-h1 h2{
-    padding: 30px;
-}
-h2{
-    font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
+/*Textos*/
+/**************************/
+h1 {
+    padding: 20px;
 }
 
-h3{
+h2,
+h3,
+h4 {
     padding: 10px;
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
 }
-h4{
+
+h4 {
     padding: 5px;
-    margin: 5px;
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
 }
-p{
+
+p {
     padding: 10px;
     line-height: 1.5;
     font-size: 1.2rem;
@@ -230,15 +310,17 @@ p{
 }
 
 /**************************/
-/*redes*/
-.social-media{
+/*Redes*/
+/**************************/
+.social-media {
     padding: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
-.social-media a{
+
+.social-media a {
     margin: 0 10px;
     font-size: 24px;
     text-decoration: none;
@@ -251,8 +333,10 @@ p{
 
 .whatsapp {
     position: fixed;
-    bottom: 20px;  /* Distancia desde la parte inferior de la ventana */
-    right: 20px;   /* Distancia desde la parte derecha de la ventana */
+    bottom: 20px;
+    /* Distancia desde la parte inferior de la ventana */
+    right: 20px;
+    /* Distancia desde la parte derecha de la ventana */
     background-color: #25D366;
     color: white;
     font-size: 40px;
@@ -268,69 +352,115 @@ p{
 }
 
 .whatsapp:hover {
-    background-color: #128C7E; /* Cambia el color al pasar el cursor */
+    background-color: #128C7E;
+    /* Cambia el color al pasar el cursor */
 }
 
+/**************************/
 /*Fuentes*/
+/**************************/
 /*Sansita*/
 .sansita-regular {
     font-family: "Sansita", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .sansita-bold {
+}
+
+.sansita-bold {
     font-family: "Sansita", serif;
     font-weight: 700;
     font-style: normal;
-  }
-  
-  .sansita-extrabold {
+}
+
+.sansita-extrabold {
     font-family: "Sansita", serif;
     font-weight: 800;
     font-style: normal;
-  }
-  
-  .sansita-black {
+}
+
+.sansita-black {
     font-family: "Sansita", serif;
     font-weight: 900;
     font-style: normal;
-  }
-  
-  .sansita-regular-italic {
+}
+
+.sansita-regular-italic {
     font-family: "Sansita", serif;
     font-weight: 400;
     font-style: italic;
-  }
-  
-  .sansita-bold-italic {
+}
+
+.sansita-bold-italic {
     font-family: "Sansita", serif;
     font-weight: 700;
     font-style: italic;
-  }
-  
-  .sansita-extrabold-italic {
+}
+
+.sansita-extrabold-italic {
     font-family: "Sansita", serif;
     font-weight: 800;
     font-style: italic;
-  }
-  
-  .sansita-black-italic {
+}
+
+.sansita-black-italic {
     font-family: "Sansita", serif;
     font-weight: 900;
     font-style: italic;
-  }
-  
-  /*karla*/
-.karla-normal {
-  font-family: "Karla", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
 }
+
+/*karla*/
+.karla-normal {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
 .karla-bold {
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-  }
+}
+
+/*mobile*/
+@media screen and (max-width:768px) {
+    .container {
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 2fr;
+        gap:2.5px;
+        grid-template-areas:
+            "header"
+            "section"
+            "main"
+            "aside"
+            "footer"
+        ;
+    }
+    
+    .cabeza {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 1fr ;
+        gap: .5px;
+        grid-template-areas:
+            "header"
+            "section"
+            "main"
+            "aside"
+            "footer"
+        ;
+    }
+
+    .cabeza {
+        padding: 2.5px;
+        display: flex;
+        flex-direction: column;
+    }
+}

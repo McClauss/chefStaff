@@ -33,23 +33,22 @@
 </head>
 
 <body>
-    <header class="container-fluid text-center">
-        <div class="row text-center">
-            <!--Menu de Opciones-->
-            <div class="col text-center">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body"
-                    data-bs-theme="dark">
+    <header class="container-fluid">
+        <!--Menu de Opciones-->
+        <div class="row m-4">
+            <div class="col m-4">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body fixed-top">
                     <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                         <a class="navbar-brand" href="#">
                             <img src="./images/logos/Logotipo version monocromatica blanco.png" alt="ChefStaff Logo"
                                 width="100%" height="100vh">
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -59,9 +58,10 @@
                                         aria-expanded="false">
                                         Servicios
                                     </a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu dropdown-menu-dark">
                                         <li><a class="dropdown-item" href="./pages/personalChefs.html">Chef</a></li>
-                                        <li><a class="dropdown-item" href="./pages/servicios.html">Ayudante de Cocina</a></li>
+                                        <li><a class="dropdown-item" href="./pages/servicios.html">Ayudante de
+                                                Cocina</a></li>
                                         <li><a class="dropdown-item" href="./pages/servicios.html">Pastelero</a></li>
                                         <li><a class="dropdown-item" href="./pages/servicios.html">Bartender</a></li>
                                         <li><a class="dropdown-item" href="./pages/servicios.html">Mesero</a></li>
@@ -69,7 +69,8 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="./pages/servicios.html">Todos los Servicios</a></li>
+                                        <li><a class="dropdown-item" href="./pages/servicios.html">Todos los
+                                                Servicios</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -79,7 +80,8 @@
                                     <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                                 </li>
                                 <li class="nav-item pb-auto social-media">
-                                    <a href="https://www.instagram.com/chefstaff_app/" target="_blank" aria-label="Instagram">
+                                    <a href="https://www.instagram.com/chefstaff_app/" target="_blank"
+                                        aria-label="Instagram">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </li>
@@ -108,109 +110,121 @@
                 </nav>
             </div>
         </div>
-    </header>
-    <main class="container-fluid text-center">
-        <!--Encabezado Principal-->
-        <div class="row text-center transparencia">
+        <!--Cabecera-->
+        <div class="row transparencia">
             <div class="col">
                 <h1 class="text-center">
                     <span class="sansita-extrabold display-4">Chef</span><span class="karla-bold display-5">Staff</span>
                 </h1>
             </div>
             <div class="col">
-                <h2 class="text-start">
+                <h3 class="text-start">
                     <small class="text-body-secondary">
                         La plataforma que conecta a quienes buscan <em><mark>talento gastronómico</mark></em>
                         con los mejores profesionales del sector.
                     </small>
-                </h2>
+                </h3>
             </div>
         </div>
-        <!--Carrousel Intro-->
-        <div class="row text-center transparencia">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img class="w-50 h-50" src="./images/personal/chefs1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 class="text-white bg-dark">Chefs, Ayudantes de Cocina y Pasteleros</h5>
-                            <p class="text-white-50 bg-dark text-center">Tenemos personal disponible para cubrir cada
-                                posición de tu cocina y mesa</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img class="w-50 h-50" src="./images/personal/chefs3.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 class="text-white bg-dark">Chefs, Ayudantes de Cocina y Pasteleros</h5>
-                            <p class="text-white-50 bg-dark text-center">Tenemos personal disponible para cubrir cada
-                                posición de tu cocina y mesa</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="w-50 h-50" src="./images/personal/bartender1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 class="text-white bg-dark">Meseros, Bartenders y Coperos</h5>
-                            <p class="text-white-50 bg-dark text-center">Tenemos personal disponible para cubrir cada
-                                posición de tu cocina y mesa</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </main>
-    <!--Contenidos-->
-    <section class="container-fluid text-center">
+    </header>
+    <!--Menu de Carrousel-->
+    <section class="container text-center">
         <div class="row text-center">
-            <div class="col-10">
-                <div class="row m-2 transparencia">
-                    <h3 class="fs-3 p-3 align-middle">Servicios</h3>
-                    <p>
-                        Si necesitas un profesional en casa, un evento o tienes un establecimiento del sector
-                        horeca,
-                        revisa
-                        nuestro <strong><a
-                                class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                href="./pages/servicios.html">Staff</a></strong> gastronómico.
-                    </p>
+            <div class="col">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/personal/chefs1.jpg" class="d-block w-100" alt="chefs">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Chefs y Cocineros</h5>
+                                <p>Solo profesonales en Gastronomía al alcance de un click. Revisa nuestro Staff</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/personal/chefs3.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Auxiliares de Cocina y Coperos</h5>
+                                <p>Solo profesonales en Gastronomía al alcance de un click. Revisa nuestro Staff</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/personal/bartender1.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Bartenders y Meseros</h5>
+                                <p>Solo profesonales en Gastronomía al alcance de un click. Revisa nuestro Staff</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div class="row m-2 transparencia">
-                    <h3 class="fs-3 p-3 align-middle">Postula</h3>
-                    <p>
-                        Si eres un profesional gastronómico, <strong><a
-                                class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                href="./pages/postulaciones.html">únete</a></strong> a nuestra comunidad y ofrece tus
-                        servicios a una amplia red de clientes que buscan tu talento.
-                    </p>
-                </div>
-            </div>
-            <div class="col m-3 transparencia">
-                <h5>Pauta Aquí</h5>
-                <a href="#"><img src="./images/pautas/pautaHostalNomadas.png" class="img-thumbnail imgServicio"
-                        alt="Pauta Hostal Nomadas"></a>
-                <p class="text-center"><a href="#"
-                        class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Hostal
-                        Nómadas</a></p>
             </div>
         </div>
     </section>
+    <!--Contenidos-->
+    <main class="container text-center mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4 justify-content-center">
+                <div class="card p-3 mb-2 bg-secondary-subtle text-secondary-emphasis justify-content-center" style="width: 18rem;">
+                    <img src="./images/personal/meseros2.jpg" class="card-img-top" alt="Servicios">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Servicios</h4>
+                        <p class="card-text fs-6">Consulta nuestro catálogo de cocineros, ayudantes de cocina, coperos,
+                            bartenders, meseros y más
+                        </p>
+                    </div>
+                    <div class="card-body fw-bold">
+                        <a class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fs-4"
+                            href="./pages/servicios.html" class="card-link">Servicios</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 mb-2 bg-secondary-subtle text-secondary-emphasis" style="width: 18rem;">
+                    <img src="./images/personal/chefs4.jpg" class="card-img-top" alt="Postular">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Postula</h4>
+                        <p class="card-text fs-6">Únete a nuestra comunidad y ofrece tus servicios a una amplia red de clientes que buscan tu talento.
+                        </p>
+                    </div>
+                    <div class="card-body fw-bold">
+                        <a class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fs-4"
+                            href="./pages/postulaciones.html" class="card-link">Postula</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 mb-2 bg-secondary-subtle text-secondary-emphasis" style="width: 18rem;">
+                    <img src="./images/personal/eventos.jpg" class="card-img-top" alt="Postular">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">Eventos</h4>
+                        <p class="card-text fs-6">Tienes un evento, reunión o actividad? Tenemos todo el staff necesario. Háblanos
+                        </p>
+                    </div>
+                    <div class="card-body fw-bold">
+                        <a class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover fs-4"
+                            href="./pages/contacto.html" class="card-link">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <!--Botón Whatsapp-->
     <div>
         <a href="https://wa.me/+56920443149" target="_blank" class="whatsapp" aria-label="WhatsApp">

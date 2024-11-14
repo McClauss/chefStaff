@@ -33,23 +33,22 @@
 </head>
 
 <body>
-    <header class="container-fluid text-center">
-        <div class="row text-center">
-            <!--Menu de Opciones-->
-            <div class="col text-center">
-                <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body"
-                    data-bs-theme="dark">
+    <header class="container-fluid m-3">
+        <!--Menu de Opciones-->
+        <div class="row m-4">
+            <div class="col m-4">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body fixed-top">
                     <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                         <a class="navbar-brand" href="#">
                             <img src="../images/logos/Logotipo version monocromatica blanco.png" alt="ChefStaff Logo"
                                 width="100%" height="100vh">
                         </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
@@ -59,9 +58,10 @@
                                         aria-expanded="false">
                                         Servicios
                                     </a>
-                                    <ul class="dropdown-menu">
+                                    <ul class="dropdown-menu dropdown-menu-dark">
                                         <li><a class="dropdown-item" href="./personalChefs.html">Chef</a></li>
-                                        <li><a class="dropdown-item" href="./servicios.html">Ayudante de Cocina</a></li>
+                                        <li><a class="dropdown-item" href="./servicios.html">Ayudante de
+                                                Cocina</a></li>
                                         <li><a class="dropdown-item" href="./servicios.html">Pastelero</a></li>
                                         <li><a class="dropdown-item" href="./servicios.html">Bartender</a></li>
                                         <li><a class="dropdown-item" href="./servicios.html">Mesero</a></li>
@@ -69,7 +69,8 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="./servicios.html">Todos los Servicios</a></li>
+                                        <li><a class="dropdown-item" href="./servicios.html">Todos los
+                                                Servicios</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -79,7 +80,8 @@
                                     <a class="nav-link" href="./contacto.html">Contacto</a>
                                 </li>
                                 <li class="nav-item pb-auto social-media">
-                                    <a href="https://www.instagram.com/chefstaff_app/" target="_blank" aria-label="Instagram">
+                                    <a href="https://www.instagram.com/chefstaff_app/" target="_blank"
+                                        aria-label="Instagram">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </li>
@@ -108,26 +110,25 @@
                 </nav>
             </div>
         </div>
-    </header>
-    <main class="container-fluid text-center m-3">
-        <!--Encabezado Principal-->
-        <div class="row text-center transparencia">
+        <!--Cabecera-->
+        <div class="row transparencia">
             <div class="col">
                 <h1 class="text-center">
                     <span class="sansita-extrabold display-4">Chef</span><span class="karla-bold display-5">Staff</span>
                 </h1>
             </div>
             <div class="col">
-                <h2 class="text-start">
+                <h3 class="text-start">
                     <small class="text-body-secondary">
-                        Únete al mejor equipo de <em><mark>profesionales de la gastronomía</mark></em> y vive la mejor
-                        experiencia haciendo lo que más te gusta
+                        La plataforma que conecta a quienes buscan <em><mark>talento gastronómico</mark></em>
+                        con los mejores profesionales del sector.
                     </small>
-                </h2>
+                </h3>
             </div>
-    </main>
+        </div>
+    </header>
     <!--Contenidos-->
-    <section class="container-sm text-center transparencia">
+    <main class="container-sm text-center transparencia">
         <form class="p-1">
             <div class="row">
                 <div class="col">
@@ -253,7 +254,7 @@
                 <button type="reset" class="btn btn-dark">Limpiar</button>
             </div>
         </form>
-    </section>
+    </main>
     <!--Botón Whatsapp-->
     <div>
         <a href="https://wa.me/+56920443149" target="_blank" class="whatsapp" aria-label="WhatsApp">

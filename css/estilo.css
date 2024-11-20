@@ -1,0 +1,174 @@
+/*Imagenes*/
+/*BG Colores*/
+/*Colores*/
+/*fuentes*/
+/*Opacidad*/
+/*radios*/
+/*padding*/
+/*margin*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/fondos/kitchen9.jpg");
+  background-color: #f8f5f2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+div {
+  padding: 10px;
+}
+
+h1, h2, h3, h4 {
+  padding: 5px;
+}
+
+p {
+  padding: 10px;
+}
+
+.transparencia {
+  background-color: rgba(255, 255, 255, 0.7098039216);
+  border-radius: 2%;
+}
+
+.imgServicio {
+  border-radius: 10%;
+  opacity: 0.7;
+  width: 200px;
+  height: 200px;
+}
+.imgServicio:hover {
+  opacity: 1;
+}
+
+form {
+  border: 1px solid #040A44;
+  border-radius: 15px;
+}
+form div {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+form div input, form div label {
+  padding: 5px;
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+}
+
+.social-media {
+  padding: 2px;
+  background-color: rgba(49, 48, 48, 0.4745098039);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.social-media a {
+  margin: 0 10px;
+  color: rgba(248, 248, 248, 0.8784313725);
+  font-size: 40px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.social-media a:hover {
+  color: #f70669;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 40px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+.whatsapp:hover {
+  background-color: #128C7E;
+}
+
+/**************************/
+/*Fuentes*/
+/**************************/
+/*Sansita*/
+.sansita-regular {
+  font-family: "Sansita", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sansita-bold {
+  font-family: "Sansita", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sansita-extrabold {
+  font-family: "Sansita", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.sansita-black {
+  font-family: "Sansita", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.sansita-regular-italic {
+  font-family: "Sansita", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.sansita-bold-italic {
+  font-family: "Sansita", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.sansita-extrabold-italic {
+  font-family: "Sansita", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.sansita-black-italic {
+  font-family: "Sansita", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/*karla*/
+.karla-normal {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.karla-bold {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=estilo.css.map */

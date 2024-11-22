@@ -1,0 +1,65 @@
+@use "variables" as *;
+
+/*Sansita*/
+.sansita-regular {
+    font-family: $sansita;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sansita-bold {
+    font-family: $sansita;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.sansita-extrabold {
+    font-family: $sansita;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.sansita-black {
+    font-family: $sansita;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.sansita-regular-italic {
+    font-family: $sansita;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.sansita-bold-italic {
+    font-family: $sansita;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.sansita-extrabold-italic {
+    font-family: $sansita;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.sansita-black-italic {
+    font-family: $sansita;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/*karla*/
+.karla-normal {
+    font-family: $karla;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.karla-bold {
+    font-family: $karla;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}

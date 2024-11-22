@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+.fondoChef{
+
+    background-color: $bg_color_chef;
+    color:white;
+    font-weight: bold;
+    border:none;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+        &:hover{
+            background-color: $bg_color_chef_hover;
+        }
+}

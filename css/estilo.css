@@ -1,11 +1,7 @@
-/*Imagenes*/
-/*BG Colores*/
-/*Colores*/
-/*fuentes*/
-/*Opacidad*/
-/*radios*/
-/*padding*/
-/*margin*/
+/*Variables Backgrounds*/
+/*Variables Colores*/
+/*Variables margin, padding y radios*/
+/*Fuentes*/
 * {
   margin: 0;
   padding: 0;
@@ -24,17 +20,17 @@ div {
   padding: 10px;
 }
 
+.transparencia {
+  background-color: rgba(255, 255, 255, 0.7098039216);
+  border-radius: 2%;
+}
+
 h1, h2, h3, h4 {
   padding: 5px;
 }
 
 p {
   padding: 10px;
-}
-
-.transparencia {
-  background-color: rgba(255, 255, 255, 0.7098039216);
-  border-radius: 2%;
 }
 
 .imgServicio {
@@ -47,66 +43,6 @@ p {
   opacity: 1;
 }
 
-form {
-  border: 1px solid #040A44;
-  border-radius: 15px;
-}
-form div {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-}
-form div input, form div label {
-  padding: 5px;
-  font-family: "Karla", sans-serif;
-  font-size: 1.2rem;
-}
-
-.social-media {
-  padding: 2px;
-  background-color: rgba(49, 48, 48, 0.4745098039);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-.social-media a {
-  margin: 0 10px;
-  color: rgba(248, 248, 248, 0.8784313725);
-  font-size: 40px;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-.social-media a:hover {
-  color: #f70669;
-}
-
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  font-size: 40px;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s;
-}
-.whatsapp:hover {
-  background-color: #128C7E;
-}
-
-/**************************/
-/*Fuentes*/
-/**************************/
 /*Sansita*/
 .sansita-regular {
   font-family: "Sansita", serif;
@@ -157,7 +93,7 @@ form div input, form div label {
 }
 
 /*karla*/
-.karla-normal {
+.karla-normal, form div input, form div label {
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
@@ -169,6 +105,82 @@ form div input, form div label {
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
+}
+
+form {
+  border: 1px solid #040A44;
+  border-radius: 15px;
+}
+form div {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+form div input, form div label {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.fondoChef {
+  background-color: #040A44;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  text-align: center;
+}
+.fondoChef:hover {
+  background-color: #F70669;
+}
+
+.social-media {
+  padding: 2px;
+  background-color: rgba(49, 48, 48, 0.4745098039);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.social-media a {
+  margin: 0 10px;
+  color: rgba(248, 248, 248, 0.8784313725);
+  font-size: 40px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.social-media a:hover {
+  color: #f70669;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 40px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+.whatsapp:hover {
+  background-color: #128C7E;
 }
 
 /*# sourceMappingURL=estilo.css.map */

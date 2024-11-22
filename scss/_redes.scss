@@ -1,0 +1,41 @@
+@use "variables" as *;
+
+.social-media {
+    padding: $padding2px;
+    background-color: $bg_color_social_media;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    a{
+        margin:$margin0_10px;
+        color: $color_social_media;
+        font-size: 40px;
+        text-decoration: none;
+        transition: color 0.3s;
+        &:hover{
+            color: $color_social_media_hover;    
+        }
+    }
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: $bg_color_whatsapp;
+    color: $color_blanco;
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    border-radius: $radio10*5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    &:hover{
+        background-color: $bg_color_whatsapp_hover;    
+    }
+}

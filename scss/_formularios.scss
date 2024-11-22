@@ -1,0 +1,26 @@
+@use "variables" as *;
+@use "fuentes" as *;
+
+form {
+    border: 1px solid #040A44;
+    border-radius: $radio15px;
+    div{
+        padding: $padding10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        input, label{
+            padding: $padding5px;
+            @extend .karla-normal;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.form-check {
+    display: flex;
+    align-items: center; 
+    gap: 10px;  
+    margin-top: 10px;
+}

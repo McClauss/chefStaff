@@ -1,0 +1,24 @@
+@use "variables" as *;
+
+* {
+    margin: $margin0;
+    padding: $padding0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: $bg_imagen;
+    background-color: $bg_color_pagina;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div{
+    padding: $padding10px;
+}
+
+.transparencia{
+    background-color: $bg_color_transparente;
+    border-radius: $radio2;
+}

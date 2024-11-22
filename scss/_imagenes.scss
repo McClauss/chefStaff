@@ -1,0 +1,11 @@
+@use "variables" as *;
+
+.imgServicio {
+    border-radius: $radio10;
+    opacity: $opaco;
+    width: 200px;
+    height: 200px;
+        &:hover{
+            opacity: $opaco_hover;
+        }
+}

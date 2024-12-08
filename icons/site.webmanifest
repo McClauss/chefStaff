@@ -1,0 +1,145 @@
+{
+    "name": "ChefStaff",
+    "short_name": "ChefStaff",
+    "description": "La plataforma donde encuentras los mejores profesionales del sector gastronóminco",
+    "start_url": "/index.html",
+    "icons": [
+        {
+            "src": "/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#040A44",
+    "background_color": "#f8f5f2",
+    "display": "standalone",
+    "shortcuts": [
+        {
+            "name": "Servicios",
+            "short_name": "Servicios",
+            "description": "Conoce los servicios que ofrece ChefStaff.",
+            "url": "/pages/servicios.html",
+            "icons": [
+                {
+                    "src": "/icons/android-chrome-192x192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/icons/android-chrome-512x512.png",
+                    "sizes": "512x512",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/icons/favicon-32x32.png",
+                    "sizes": "32x32",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/icons/favicon-16x16.png",
+                    "sizes": "16x16",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Postulaciones",
+            "short_name": "Postulaciones",
+            "description": "Envía tu postulación para unirte al equipo.",
+            "url": "/pages/postulaciones.html",
+            "icons": [
+                {
+                    "src": "/icons/android-chrome-192x192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/icons/android-chrome-512x512.png",
+                    "sizes": "512x512",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/icons/favicon-32x32.png",
+                    "sizes": "32x32",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/icons/favicon-16x16.png",
+                    "sizes": "16x16",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Chefs",
+            "short_name": "Chefs",
+            "description": "Explora chefs disponibles.",
+            "url": "/pages/personalChefs.html",
+            "icons": [
+                {
+                    "src": "/icons/android-chrome-192x192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/icons/android-chrome-512x512.png",
+                    "sizes": "512x512",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/icons/favicon-32x32.png",
+                    "sizes": "32x32",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/icons/favicon-16x16.png",
+                    "sizes": "16x16",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Contacto",
+            "short_name": "Contacto",
+            "description": "Ponte en contacto con nosotros.",
+            "url": "/pages/contacto.html",
+            "icons": [
+                {
+                    "src": "/icons/android-chrome-192x192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/icons/android-chrome-512x512.png",
+                    "sizes": "512x512",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/icons/favicon-32x32.png",
+                    "sizes": "32x32",
+                    "type": "image/png"
+                },
+                {
+                    "src": "/icons/favicon-16x16.png",
+                    "sizes": "16x16",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ]
+}
